@@ -1,11 +1,10 @@
-# Unscented Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+# Unscented Kalman Filter Project
 
-In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
+In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance [px, py, ,vx, vy] <= [.09, .10, .40, .30] with given test dataset. 
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases).
 
-This repository includes two files that can be used to set up and intall [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO. Please see the uWebSocketIO Starter Guide page in the classroom within the EKF Project lesson for the required version and installation scripts.
+This project requires [uWebSocketIO](https://github.com/uWebSockets/uWebSockets).
 
 Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
 
@@ -16,13 +15,6 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 5. ./UnscentedKF
 
 Tips for setting up your environment can be found in the classroom lesson for the EKF project.
-
-Note that the programs that need to be written to accomplish the project are src/ukf.cpp, src/ukf.h, tools.cpp, and tools.h
-
-The program main.cpp has already been filled out, but feel free to modify it.
-
-Here is the main protocol that main.cpp uses for uWebSocketIO in communicating with the simulator.
-
 
 INPUT: values provided by the simulator to the c++ program
 
@@ -59,33 +51,6 @@ OUTPUT: values provided by the c++ program to the simulator
 3. Compile: `cmake .. && make`
 4. Run it: `./UnscentedKF`
 
-## Editor Settings
-
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
-
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
-
-## Code Style
-
-Please stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html) as much as possible.
-
-## Generating Additional Data
-
-This is optional!
-
-If you'd like to generate your own radar and lidar data, see the
-[utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
-Matlab scripts that can generate additional data.
-
-## Project Instructions and Rubric
-
-This information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see the project page in the classroom
-for instructions and the project rubric.
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
-
+## Result
+[result]: ./result.png "Original"
+![alt text][result]
