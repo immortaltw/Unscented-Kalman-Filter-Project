@@ -41,7 +41,6 @@ class UKF {
    */
   void UpdateRadar(MeasurementPackage meas_package);
 
-
   // initially set to false, set to true in first call of ProcessMeasurement
   bool is_initialized_;
 
@@ -95,6 +94,14 @@ class UKF {
 
   // Sigma point spreading parameter
   double lambda_;
+
+private:
+  /**
+   * Helper method for sensor measurement update
+   * @param meas_package The measurement at k+1
+   * @param n_z The dimensin of measurement
+   */
+  void UpdateSensorMeas(int n_z, Eigen::VectorXd &z, Eigen::MatrixXd &Zsig, Eigen::MatrixXd &R);
 };
 
 #endif  // UKF_H
