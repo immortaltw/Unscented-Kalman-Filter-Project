@@ -115,6 +115,7 @@ void UKF::Prediction(double delta_t) {
   // predicted state covariance matrix
   MatrixXd Pp_ = MatrixXd(5, 5);
 
+  // Initialize x matrix
   x_aug.fill(0.0);
   x_aug.head(n_x_) = x_;
 
